@@ -1,0 +1,18 @@
+In a Restaurant, there are tables with different seating arrangement. Arrangement are as follows:
+* Tables which can seat 2 people - T1
+* Tables which can seat 4 people - T2
+* Tables which can seat 8 people - T3
+ In case there is a group which contains more than 8 people, they can be seated by rearranging T1 and T2 (T3 cannot be rearranged). Also, there is a finite number of T1, T2 and T3. 
+
+Occupied tables are emptied in X minutes. Assume X to be random number between 30 and 45. 
+ 
+Groups of people are coming in (as in a stream). Task is to seat them based on the number of people in a group. Write an algorithm to fulfill this task such that wait time is minimized. 
+
+Parallel task processing is encouraged.
+
+Example :
+* Group1 contains 2 people. Algorithm assigns them a T1.
+* Group2 contains 3 people. Algorithm assigns them a T2.
+* Group3 contains 4 people. Algorithm assigns them a T2.
+* Group4 contains 10 people. Algorithm assigns them a rearrangement of 2 * T2 + 1 * T1 or 5 * T1 or 3 * T1 + 1 * T2
+* Assume there are multiple hosts assigning tables -- Group 1 is assigned by host 1 and Group 2 assigned by host2.
